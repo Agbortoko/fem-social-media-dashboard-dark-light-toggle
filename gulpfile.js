@@ -4,9 +4,7 @@
 const { src, dest, watch, series } = require('gulp');
 
 // Importing all other necessary modules
-const sass = require('gulp-sass')(require('dart-sass'));
-// sass.compiler = ; // for modern sass syntax
-
+const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
