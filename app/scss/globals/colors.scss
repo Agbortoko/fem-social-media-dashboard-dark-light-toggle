@@ -17,7 +17,7 @@
 
     --toggle-bg-start: hsl(210, 78%, 56%);
     --toggle-bg-end: hsl(146, 68%, 55%);
-    --toggle-bg-bg: linear gradient var(var(--toggle-bg-start)) to var(var(--toggle-bg-end));
+    --toggle-bg: linear gradient var(--toggle-bg-start) to var(--toggle-bg-end);
 
     // Light Theme Toggle
 

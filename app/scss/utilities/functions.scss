@@ -3,5 +3,25 @@
 // Helps to convert pixels to rem
 
 @function rem($pixels, $context: 16){
-    @return math.div($pixels , $context) * 1rem;
+
+    @if math.is-unitless($pixels) {
+        @return math.div($pixels , $context) * 1rem;
+    }
+    @else{
+        @error "#{$pixels} value must not contain a unit, please remove the 'px' from the number";
+    }
+}
+
+
+// Helps to convert pixels to em
+
+@function em($pixels, $context: 16){
+
+    @if math.is-unitless($pixels){
+        @return math.div($pixels, $context) * 1em;
+    }
+    @else{
+        @error "#{$pixels} value must not contain a unit, please remove the 'px' from the number";
+    }
+
 }
