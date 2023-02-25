@@ -1,18 +1,20 @@
+@use "./functions" as *;
+
 // 640px, 1024px, 1400px
 
 $breakpoints-up: (
-    "medium": "40em",
-    "large": "64em",
-    "xlarge": "87.5em"
+    "medium": em(640), // 40em
+    "large": em(1024), // 64em
+    "xlarge": em(1400) // 87.5em
 );
 
 
 // 639px, 1023px, 1399px
 
 $breakpoints-down: (
-    "small" : "39.9375em",
-    "medium" : "63.9375em",
-    "large" : "87.4375em"
+    "small" : em(639), // 39.9375em
+    "medium" : em(1023), // 63.9375em
+    "large" : em(1399) // 87.4375em
 );
 
 
