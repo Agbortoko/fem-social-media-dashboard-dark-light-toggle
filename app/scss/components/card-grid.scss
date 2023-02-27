@@ -1,0 +1,49 @@
+@use '../utilities' as *;
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: rem(30);
+    padding: rem(15) rem(25);
+
+    &__title{
+        justify-self: start;
+        align-self: center;
+        text-align: left;
+        font-size: rem(12);
+        font-weight: 700;
+    }
+
+
+    &__icon{
+        justify-self: end;
+        align-self: center;
+        width: rem(20);
+        height: rem(20);
+    }
+
+    &__count{
+        justify-self: start;
+        font-weight: 700;
+        color: var(--white);
+    }
+
+    &__percentage{
+        justify-self: end;
+        font-size: rem(12);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(4);
+    
+        &--up{
+            color: var(--limegreen);
+        }
+
+        &--down{
+            color: var(--brightred);
+        }
+    }
+}

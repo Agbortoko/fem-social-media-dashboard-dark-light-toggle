@@ -8,6 +8,13 @@
   
   <title>Frontend Mentor | Social Media Dashboard Dark Light Toggle</title>
 
+
+  <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
   <!-- Google fonts -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +70,7 @@
 
   <main>
 
-    <section class="container grid grid-gap-30">
+    <section class="container grid grid-gap-30" aria-label="cards">
 
         <div class="card card--facebook" aria-label="card">
             <header class="card__header">
@@ -153,7 +160,34 @@
         </div>
 
     </section>
+
+    <section class="container">
+      <h2>Overview - Today</h2>
+
+      <section class="grid grid-gap-30" aria-label="cards">
   
+          <div class="card card-grid">
+  
+     
+              <div class="card-grid__title"> Page Views</div>
+              <img src="images/icon-facebook.svg" class="card-grid__icon" aria-label="Facebook">
+    
+
+              <div class=" card-grid__count card__count--small"> 87</div>
+              <div class=" card-grid__percentage card-grid__percentage--up">
+                <img src="images/icon-up.svg" alt="Up arrow">
+                3%
+              </div>
+
+          
+          </div>
+
+  
+  
+      </section>
+    </section>
+  
+    
 
 
 
