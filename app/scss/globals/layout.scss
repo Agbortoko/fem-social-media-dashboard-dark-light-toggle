@@ -1,5 +1,7 @@
 @use '../utilities' as *;
 
+
+
 .container{
     padding: 0 rem(25);
     max-width: rem(1110);
@@ -7,5 +9,30 @@
 
     @include breakpoint(large){
         padding: 0;
+    }
+}
+
+ 
+$gaps: 10, 20, 30, 40;
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include breakpoint(medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(large){
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @each $gap in $gaps {    
+        &-gap-#{$gap}{
+            gap: rem($gap);
+        }
+    
     }
 }
