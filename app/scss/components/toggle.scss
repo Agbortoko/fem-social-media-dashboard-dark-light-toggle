@@ -1,8 +1,20 @@
 @use '../utilities' as *;
 
 .toggle{
+    border: none;
 
-    &__button{
+    &__wrapper{
+
+        input[type="radio"]{
+            opacity: 0;
+        }
+    }
+
+    &__background{
+        
+    }
+
+    &__switcher{
         width: rem(16);
         height: rem(16);
         border-radius: 50%;
