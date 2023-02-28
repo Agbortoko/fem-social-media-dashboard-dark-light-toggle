@@ -3,6 +3,7 @@
     const body = document.querySelector("body");
     const darkToggle = document.querySelector("#dark");
     const lightToggle = document.querySelector("#light");
+    const toggleLabel = document.querySelector("#toggle_label");
 
 
     // Check if theme is already set in local storage and display the proper scheme 
@@ -13,6 +14,8 @@
         body.classList.remove("dark");
         body.classList.add("light");
         lightToggle.checked = true;
+        toggleLabel.innerHTML = "Light Mode";
+        toggleLabel.setAttribute("for", "light");
     }
 
       
@@ -24,6 +27,8 @@
         body.classList.remove("light");
         body.classList.add("dark");
         darkToggle.checked = true;
+        toggleLabel.innerHTML = "Dark Mode";
+        toggleLabel.setAttribute("for", "dark");
     }
 
 
@@ -34,11 +39,15 @@
     
             if(window.matchMedia("(prefers-color-scheme: dark)").matches){
                 darkToggle.checked = true;
+                toggleLabel.innerHTML = "Dark Mode";
+                toggleLabel.setAttribute("for", "dark");
             }
         
         
               if(window.matchMedia("(prefers-color-scheme: light)").matches){
                 lightToggle.checked = true;
+                toggleLabel.innerHTML = "Light Mode";
+                toggleLabel.setAttribute("for", "light");
             }
     
         }
@@ -60,12 +69,16 @@
                 localStorage.setItem("theme", "dark");
                 body.classList.remove("light");
                 body.classList.add("dark");
+                toggleLabel.innerHTML = "Dark Mode";
+                toggleLabel.setAttribute("for", "dark");
             }
             
             if(lightToggle.checked){
                 localStorage.setItem("theme", "light");
                 body.classList.remove("dark");
                 body.classList.add("light");
+                toggleLabel.innerHTML = "Light Mode";
+                toggleLabel.setAttribute("for", "light");
             }
 
         });
