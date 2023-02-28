@@ -7,13 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social Media Dashboard Dark Light Toggle</title>
-
-
-  <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Your Website Title" />
-  <meta property="og:description"   content="Your description" />
-  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+  <meta property="og:url"          content="" />
+  <meta property="og:type"         content="website" />
+  <meta property="og:title"        content="Frontend Mentor | Social Media Dashboard Dark Light Toggle" />
+  <meta property="og:description"  content="Social Media Dashboard Dark Light Toggle" />
+  <meta property="og:image"        content="./images/favicon-32x32.png" />
 
   <!-- Google fonts -->
 
@@ -46,14 +44,20 @@
   
     <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
 
-      <label for="dark">Dark</label>
-      <label for="system">System</label>
-      <label for="light">Light</label>
+ 
+        <label class="toggle__label" for="dark">Dark Mode
+          <span class="screenreader-only">On</span>
+        </label>
+
+        <label class="screenreader-only" for="light">
+          Dark Mode Off
+        </label>
+      
+
 
       <section class="toggle__wrapper">
 
         <input type="radio" name="theme" id="dark">
-        <input type="radio" name="theme" id="system" checked />
         <input type="radio" name="theme" id="light" />
         
         <span aria-hidden="true" class="toggle__background"></span>
@@ -308,7 +312,7 @@
 
 
   
-  <div class="attribution">
+  <div class="container attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Agbortoko">Agbortoko Arreychuck</a>.
   </div>
