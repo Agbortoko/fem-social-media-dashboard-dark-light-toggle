@@ -29,8 +29,10 @@
         height: rem(24);
 
         input[type="radio"]{
+            appearance: none; // removes default circular look
+            border: 1px solid #333; // adds border and makes it a square 
             opacity: 0;
-            margin: 0 rem(-4) 0 rem(-4);
+            margin: 0 rem(-1.8) 0 rem(-1.8);
             width: rem(24);
             height: rem(24);
 
@@ -70,7 +72,7 @@
         height: rem(18);
         border-radius: 50%;
         background-color: var(--toggle-switcher);
-        transition: all 350ms ease-in-out;
+        transition: all 350ms ease;
     }
 
 
