@@ -8,6 +8,12 @@
     text-align: center;
     border-radius: rem(5);
     overflow: hidden;
+    transition: background-color 350ms ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--dark-card-hover);
+    }
 
     &--facebook{
         border-top: rem(5) solid var(--facebook);
