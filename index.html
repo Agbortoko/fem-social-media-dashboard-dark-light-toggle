@@ -7,11 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social media dashboard with theme switcher solution</title>
-  <meta property="og:url"          content="" />
-  <meta property="og:type"         content="website" />
-  <meta property="og:title"        content="Frontend Mentor | Social Media Dashboard Dark Light Toggle" />
-  <meta property="og:description"  content="Social Media Dashboard Dark Light Toggle" />
-  <meta property="og:image"        content="./images/favicon-32x32.png" />
+
+  <!-- SEO -->
+  <meta name="author" content="Agbortoko Arretchuck">
+  <meta name="keywords" content="frontendmentor, social media dashboard challenge, frontendmentor challenge, dashboard challenge by frontendmentor, popular social media dashboard challenge">
+
+  <meta name="description" content="Frontend Mentor Social media dashboard with theme switcher solution">
+
+
+  <meta property="og:url"         content="" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Frontend Mentor | Social Media Dashboard Dark Light Toggle" />
+  <meta property="og:description" content="Social Media Dashboard Dark Light Toggle" />
+  <meta property="og:image"       content="./images/favicon-32x32.png" />
 
   <!-- Google fonts -->
 
@@ -26,8 +34,6 @@
 
   <script defer src="dist/js/script.min.js"></script>
 
-  
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -37,10 +43,10 @@
 <body>
   <header class="header container">
 
-    <section class="header__title">
+    <div class="header__title">
       <h1>  Social Media Dashboard</h1>
       <span class="header__subtitle">Total Followers: 23,004</span>
-    </section>
+    </div>
   
     <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
 
@@ -50,7 +56,8 @@
         </label> 
 
 
-      <section class="toggle__wrapper">
+      <div class="toggle__wrapper">
+
 
         <input type="radio" name="theme" id="dark">
         <input type="radio" name="theme" id="light" />
@@ -59,7 +66,7 @@
         <span aria-hidden="true" class="toggle__switcher"></span>
         
 
-      </section>
+      </div>
 
 
     </fieldset>
@@ -69,22 +76,22 @@
 
   <main>
 
-    <section class="container grid grid-gap-30" aria-label="cards">
+    <section class="container grid grid-gap-30">
 
-        <div class="card card--facebook" aria-label="card">
+        <div class="card card--facebook">
             <header class="card__header">
   
                 <img class="card__icon" src="images/icon-facebook.svg" alt="Facebook Icon">
                 <div class="card__username">@nathanf</div>
             </header>
 
-            <main class="card__body">
+            <div class="card__body">
                 <div class="card__count card__count--big">
                   1987
                 </div>
                 <div class="card__label  card__count--small">Followers</div>
 
-            </main>
+            </div>
 
             <footer class="card__footer">
                 <img src="images/icon-up.svg" alt="Up Arrow">
@@ -93,20 +100,20 @@
         </div>
 
 
-        <div class="card card--twitter" aria-label="card">
+        <div class="card card--twitter">
             <header class="card__header">
 
                 <img class="card__icon" src="images/icon-twitter.svg" alt="Twitter Icon">
                 <div class="card__username">@nathanf</div>
             </header>
 
-            <main class="card__body">
+            <div class="card__body">
                 <div class="card__count card__count--big">
                   1044
                 </div>
                 <div class="card__label  card__count--small">Followers</div>
 
-            </main>
+            </div>
 
             <footer class="card__footer">
                 <img src="images/icon-up.svg" alt="Up Arrow">
@@ -115,20 +122,20 @@
         </div>
 
 
-        <div class="card card--instagram" aria-label="card">
+        <div class="card card--instagram">
             <header class="card__header">
 
                 <img class="card__icon" src="images/icon-instagram.svg" alt="Instagram Icon">
                 <div class="card__username">@realnathanf</div>
             </header>
 
-            <main class="card__body">
+            <div class="card__body">
                 <div class="card__count card__count--big">
                   11k
                 </div>
                 <div class="card__label  card__count--small">Followers</div>
 
-            </main>
+            </div>
 
             <footer class="card__footer">
                 <img src="images/icon-up.svg" alt="Up Arrow">
@@ -137,20 +144,20 @@
         </div>
 
 
-        <div class="card card--youtube" aria-label="card">
+        <div class="card card--youtube">
             <header class="card__header">
 
                 <img class="card__icon" src="images/icon-youtube.svg" alt="YouTube Icon">
                 <div class="card__username">Nathan F.</div>
             </header>
 
-            <main class="card__body">
+            <div class="card__body">
                 <div class="card__count card__count--big">
                   8239
                 </div>
                 <div class="card__label  card__count--small">Subscribers</div>
 
-            </main>
+            </div>
 
             <footer class="card__footer">
                 <img src="images/icon-down.svg" alt="Down Arrow">
@@ -163,13 +170,13 @@
     <section class="container">
       <h2>Overview - Today</h2>
 
-      <section class="grid grid-gap-30" aria-label="cards">
+      <section class="grid grid-gap-30">
   
           <div class="card card-grid">
   
      
               <div class="card-grid__title"> Page Views</div>
-              <img src="images/icon-facebook.svg" class="card-grid__icon" aria-label="Facebook">
+              <img src="images/icon-facebook.svg" class="card-grid__icon" alt="Facebook Icon" aria-label="Facebook">
     
 
               <div class=" card-grid__count card__count--small"> 87</div>
@@ -185,7 +192,7 @@
   
      
               <div class="card-grid__title"> Likes</div>
-              <img src="images/icon-facebook.svg" class="card-grid__icon" aria-label="Facebook">
+              <img src="images/icon-facebook.svg" class="card-grid__icon"  alt="Facebook Icon" aria-label="Facebook">
     
 
               <div class=" card-grid__count card__count--small"> 52</div>
@@ -201,7 +208,7 @@
   
      
             <div class="card-grid__title"> Likes</div>
-            <img src="images/icon-instagram.svg" class="card-grid__icon" aria-label="Instagram">
+            <img src="images/icon-instagram.svg" class="card-grid__icon"  alt="Instagram Icon" aria-label="Instagram">
   
 
             <div class=" card-grid__count card__count--small"> 5462</div>
@@ -217,7 +224,7 @@
   
      
             <div class="card-grid__title"> Profile Views</div>
-            <img src="images/icon-instagram.svg" class="card-grid__icon" aria-label="Instagram">
+            <img src="images/icon-instagram.svg" class="card-grid__icon"  alt="Instagram Icon" aria-label="Instagram">
   
 
             <div class=" card-grid__count card__count--small"> 52k</div>
@@ -233,7 +240,7 @@
   
      
             <div class="card-grid__title"> Retweets</div>
-            <img src="images/icon-twitter.svg" class="card-grid__icon" aria-label="Twitter">
+            <img src="images/icon-twitter.svg" class="card-grid__icon"  alt="Twitter Icon" aria-label="Twitter">
   
 
             <div class=" card-grid__count card__count--small"> 117</div>
@@ -249,7 +256,7 @@
   
      
             <div class="card-grid__title"> Likes</div>
-            <img src="images/icon-twitter.svg" class="card-grid__icon" aria-label="Twitter">
+            <img src="images/icon-twitter.svg" class="card-grid__icon"  alt="Twitter Icon" aria-label="Twitter">
   
 
             <div class=" card-grid__count card__count--small"> 507</div>
@@ -265,7 +272,7 @@
   
      
             <div class="card-grid__title"> Likes</div>
-            <img src="images/icon-youtube.svg" class="card-grid__icon" aria-label="YouTube">
+            <img src="images/icon-youtube.svg" class="card-grid__icon"  alt="YouTube Icon" aria-label="YouTube">
   
 
             <div class=" card-grid__count card__count--small"> 107</div>
@@ -281,7 +288,7 @@
   
      
             <div class="card-grid__title">Total Views</div>
-            <img src="images/icon-youtube.svg" class="card-grid__icon" aria-label="YouTube">
+            <img src="images/icon-youtube.svg" class="card-grid__icon"  alt="YouTube Icon" aria-label="YouTube">
   
 
             <div class=" card-grid__count card__count--small"> 1407</div>
@@ -297,20 +304,19 @@
       </section>
     </section>
   
-    
-
-
-
-
 
   </main>
 
 
+
+  <footer class="container">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/Agbortoko">Agbortoko Arreychuck</a>.
+    </div>
+
+  </footer>
   
-  <div class="container attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/Agbortoko">Agbortoko Arreychuck</a>.
-  </div>
 
 </body>
 </html>
