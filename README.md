@@ -50,6 +50,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [SASS](https://sass-lang.com/documentation/)
+- [BEM](https://getbem.com/)
 - Vanilla JavaScript
 
 
